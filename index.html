@@ -1,0 +1,97 @@
+<DOCTYPE! html>
+
+<html>
+
+<head>
+
+<style>
+
+body {
+    background-image: url("polkadotscreen.png");
+    color: rgb(177,98,121);
+    text-align: left center;
+    font-family:sans-serif;
+}
+
+
+.Sprite {
+    width: 74px;
+    height: 74px;
+    background: url(SpriteAnimate!.png) left center;
+    animation: play 0.8s steps(4) infinite;
+} 
+
+@keyframes play {
+    100% { background-position: -296px;}
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#box1 {
+    width: 550px;
+    padding: 10px;
+    border: 4px solid rgb(173,237,210);
+    margin: 0;
+}
+</style>
+</head>
+
+<body>
+
+<title>Calculus I - L'Hopital's Rule</title>
+
+<h1> L'Hôpital's Rule:</h1> 
+
+<div class="Sprite"></div>
+<p> 
+    Using the concept of a limit, we are able to derive the derivative, also known as the<br>
+    instantaneous rate of a function, of any point on a graph. As change in x becomes <br>
+    infintesimally small we know that the equation for slope approaches the rate of change <br>
+    at a given point. Using the derivative, we are able to interpret the nature of a graph.<br>
+    <br>
+    But, how do we know what the limit of a function is if it results in <b>an indeterminate form</b><br>
+    when x is plugged into the function?<br>
+    <br>
+</p>
+<div id="box1">
+    <p style="color:rgb(173,237,210)"> <u>Example:</u><br>  
+    <img src="L'Hopital.png" alt ="Function with Indeterminant Form" style="width:250px;height:70px;">
+    <br>
+    When 0 isplugged in for x, it results in the indeterminant form, 0 over 0,<br>
+    making the limit unsolvable. 
+    </p>
+</div>
+
+<p> 
+    The answer lies within L'Hôpital's Rule which is repeatedly taking the derivative of both <br>
+    functions in the numerator and denominator. There are three instances where L'Hôpital's Rule<br>
+    can be used which is when the function is equal to: 
+    <ul style="color: rgb(195,127,214);">
+    <li> 0 over 0 </li>
+    <li> Positive infinity over infinity </li>
+    <li> Negative infinity over infinity </li>
+    </ul>
+    <br>
+    Going back to the example, we can find the derivative of both the numerator and denominator<br>
+    to get the limit.
+</p>
+
+</p>
+<div id="box1">
+    <p style="color:rgb(173,237,210)"> <u>Example:</u><br><br>  
+    <img src="solvingusingL'H.png" alt ="Solving for Limit" style="width:250px;height:130px;">
+    <br><br>
+    After solving for the derivative and substituting x, we have a limit of 1.
+    <br><br>
+    <img src="Limit of 1 for L'H.png" alt="limit1" style="width: 250px;height: 70px;">
+    </p>
+</div>
+
+
+    <p> Thanks for reading! </p>
+
+
+</body>
+</html>
